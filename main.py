@@ -4,7 +4,7 @@ from claude import prompt
 print("Initializing AI Assistant...")
 print("Checking if you are authorized...")
 events = get_events_today()
-tone = input("Please the tone you would like for your assistant today: ")
+tone = input("Please enter the tone you would like for your assistant today: ")
 print(prompt(events, tone))
 
 
