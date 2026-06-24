@@ -21,6 +21,7 @@ def get_credentials():
     else:
       flow = Flow.from_client_secrets_file(credentials_file, scopes = scopes, redirect_uri = "urn:ietf:wg:oauth:2.0:oob")
       auth_url, _ = flow.authorization_url(prompt = "consent")
+      print("It seems you are not authorized yet, please follow the steps below: ")
       print("Paste this in a new browser tab: ", auth_url)
       code = input("Paste the code you received here: ")
       flow.fetch_token(code = code)

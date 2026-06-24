@@ -15,7 +15,7 @@ def prompt(events, tone):
         You are a personal calendar assitant. You will be given a list of the days calendar events
         Your job is to:
         - Identify the events that are high priority (ex. deadlines, short prep windows, or multiple attendants) and whats low priority
-        - Flag any conflicts, scheudling issues, or gaps that aren't realistic
+        - Flag any conflicts, scheduling issues, or gaps that aren't realistic
         - Suggest things to prepare before key events
         - If there are free blocks, suggest maybe ways to use them
         - If the day is a light day then say that, otherwise if it's jampacked take into consideration burnout and faitgue
@@ -39,11 +39,11 @@ def prompt(events, tone):
 
   return response.content[0].text
 
-#Testing
-test = get_events_today()
-tone = "Cheerful"
-summary = prompt(test, tone)
-print(summary)
+# #Testing
+# test = get_events_today()
+# tone = "Cheerful"
+# summary = prompt(test, tone)
+# print(summary)
 
 # save_log(str(date.today()), summary)
 
