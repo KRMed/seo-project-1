@@ -5,7 +5,7 @@ print("Initializing AI Assistant...")
 print("Checking if you are authorized...")
 events = get_events_today()
 tone = input("Please the tone you would like for your assistant today: ")
-print(prompt(tone, events))
+print(prompt(events, tone))
 
 
 
