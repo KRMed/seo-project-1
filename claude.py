@@ -12,7 +12,7 @@ def prompt(events, tone):
     messages=[{
       "role": "user",
       "content": f"""
-        You are a personal calendar assitant. You will be given a list of the days calendar events
+        You are a personal calendar assistant. You will be given a list of the days calendar events
         Your job is to:
         - Identify the events that are high priority (ex. deadlines, short prep windows, or multiple attendants) and whats low priority
         - Flag any conflicts, scheduling issues, or gaps that aren't realistic
