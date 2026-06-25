@@ -29,7 +29,7 @@ def prompt(events, tone):
         - Use line breaks only to separate ideas, not as symbols or decorators
         - Keep it nice, aesthetic, and easy to read
 
-        Do not just give reguritate the calendar back to the user, provide real value as an assitant with analysis and advice
+        Do not just reguritate the calendar back to the user, provide real value as an assitant with analysis and advice
 
         Today's events:
         {events}

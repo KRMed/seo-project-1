@@ -24,3 +24,8 @@ def get_logs():
   with Session(engine) as session:
     stmt = select(DayLog)
     return session.scalars(stmt).all()
+
+def get_log_by_date(date):
+  with Session(engine) as session:
+    stmt = select(DayLog).where(DayLog.date == date)
+    return session.scalars(stmt).first()
